@@ -32,10 +32,11 @@ h2 {
     font-family: 'Oswald', 'sans-serif';
     font-weight: bold;
     font-size: 36px;
-    line-height: 45px;
+    line-height: 44px;
 }
 p {
     margin: 30px 0 30px 0;
+    line-height: 26px;
 }
 .buttom {
     display: inline-block;
@@ -146,5 +147,109 @@ p {
     background-position: center;
 }
 .area1 .buttom{
-    margin-top: 40px;
+    margin-top: 25px;
+}
+
+/* Area2 section */
+
+.area2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area2--content {
+    max-width: 450px;
+    margin: auto;
+    padding: 90px 0;
+}
+.area2--img1 {
+    height: 450px;
+    background-image: url(../../media/f4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.area2--img2 {  
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-image: url(../../media/f3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* Area3 section */
+
+.area3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area3--img1-content {
+    max-width: 420px;
+    padding: 250px 0;
+}
+.area3--content h2 {
+    margin: 0;
+}
+.area3--img1 {
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 132px;
+    background-image: url(../../media/bg2.jpg);
+    background-position: left;
+}
+.area3--img2 {
+    background-image: url(../../media/f5.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+/* Area4 section */
+
+.area4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #e8e9ee;
+}
+.area4--content {
+    max-width: 313px;
+    padding: 171px 0 190px;
+    margin-left: auto;
+}
+.area4--img1 {
+    grid-column: 2 / 4;
+    background-image: url(../../media/bg3.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+/* Area5 section */
+.area5{
+    display: flex;
+    align-items: flex-end;
+    
+}
+.area5 .img {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    background-color: #F5F4F0;
+}
+.area5 img {
+    max-height: 400px;
+}
+/* Footer Area*/
+
+footer div {
+    background-color: #333;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer div a {
+    text-decoration: none;
+    color: #a8f8dd;
+}
+
+footer div a:hover {
+    color: #fff;
 }
