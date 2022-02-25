@@ -183,6 +183,7 @@ p {
 .area3--img1-content {
     max-width: 420px;
     padding: 250px 0;
+    margin-right: 132px;
 }
 .area3--content h2 {
     margin: 0;
@@ -190,7 +191,6 @@ p {
 .area3--img1 {
     display: flex;
     justify-content:flex-end;
-    margin-right: 132px;
     background-image: url(../../media/bg2.jpg);
     background-position: left;
 }
@@ -252,4 +252,40 @@ footer div a {
 
 footer div a:hover {
     color: #fff;
+}
+
+@media (max-width: 1150px) {
+    .container{
+        padding: 0 20px;
+    }
+    .area3--img1 {
+        justify-content: flex-start;
+    }
+    .area3--img1-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 980px) {
+    .area1--content,
+    .area2--content,
+    .area4--content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 768px){
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+    .area4 {
+        grid-template-columns: 2fr 3fr;
+    }
 }
